@@ -53,10 +53,15 @@ class JsonRPCClient
 
         @fwrite($conn, $request."\n");
         stream_set_timeout($conn, 0, 3000);
-        $line = @fgets($conn);
+
+        do {
+            $line = @fgets($conn);
+        } while ($line !== false && empty($line));
 
         $success = 'HTTP/1.0 200 Connected';
-        if (substr($line, 0, strlen($success)) != $success) {
+        if ($line === false) {
+            throw new JsonRPCException('An error appeared while reading from RPC server');
+        } else if (substr($line, 0, strlen($success)) != $success) {
             @fclose($conn);
 
             throw new JsonRPCException(sprintf('Unexpected HTTP response while connecting: %s', $line));
