@@ -21,7 +21,7 @@ Require the package `sroze/discoverd-client` in your `composer.json` file and up
 ```php
 <?php
 
-use SRIO\Discovered\Client;
+use SRIO\Discoverd\Client;
 
 // Create the Discoverd client
 $client = new Client();
