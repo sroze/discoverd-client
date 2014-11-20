@@ -1,5 +1,5 @@
 <?php
-namespace SRIO\Discovered\Exception;
+namespace SRIO\Discoverd\Exception;
 
 class JsonRPCException extends \Exception
 {

@@ -1,7 +1,7 @@
 <?php
-namespace SRIO\Discovered;
+namespace SRIO\Discoverd;
 
-use SRIO\Discovered\Exception\JsonRPCException;
+use SRIO\Discoverd\Exception\JsonRPCException;
 
 class JsonRPCClient
 {

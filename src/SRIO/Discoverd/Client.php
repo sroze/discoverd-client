@@ -1,7 +1,7 @@
 <?php
-namespace SRIO\Discovered;
+namespace SRIO\Discoverd;
 
-use SRIO\Discovered\Exception\ClientException;
+use SRIO\Discoverd\Exception\ClientException;
 
 class Client
 {
