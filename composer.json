@@ -1,0 +1,20 @@
+{
+    "name": "sroze/discoverd-client",
+    "type": "library",
+    "description": "A PHP client for Flynn's Discoverd.",
+    "keywords": ["php", "flynn", "discoverd", "client"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel ROZE"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SRIO\\Discoverd\\": "src/SRIO/Discoverd/"
+        }
+    }
+}
