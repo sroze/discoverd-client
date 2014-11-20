@@ -9,7 +9,7 @@ Require the package `sroze/discoverd-client` in your `composer.json` file and up
 ```json
 {
     "require": {
-        "sroze/discoverd-client": "dev-master"
+        "sroze/discoverd-client": "~0.1.0"
     }
 }
 ```
